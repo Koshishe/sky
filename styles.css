@@ -1,4 +1,11 @@
+html, body {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  background-image: -webkit-linear-gradient(#070147,  #0b0179);
 }
 @-webkit-keyframes meteor {
   0% {margin-top: -300px; margin-right: -300px; opacity: 1}
@@ -6,13 +13,18 @@ body {
   10% {margin-top: 300px; margin-left: -600px; opacity: 0}
   100% {opacity: 0}
 }
+
+@-webkit-keyframes star {
+  0% {opacity: 0 }
+  10% {opacity: .3}
+  50%{opacity: .5}
+  70% {opacity: .7}
+  90% {opacity: .9}
+  100%{opacity: 1}
+}
 .scene1 {
-  background-image: -webkit-linear-gradient(top, #070147,  #0b0179);
-  width: 100vw;
-  height: 200vw;
+  height: 100%;
   position: relative;
-  overflow: hidden;
-  background-size: contain;
 }
 
 .moon {
@@ -134,8 +146,31 @@ body {
 }
 
 .meteor {top: 100px;left: 480px;-webkit-animation: meteor 10s linear infinite;}
-.meteor:nth-child(1) {top: 100px;left: 1300px;-webkit-animation: meteor 10s linear infinite; animation-delay: 3s;}
-.meteor:nth-child(2) {top: 400px;left: 280px;-webkit-animation: meteor 5s linear infinite; animation-delay: 2s;}
+.meteor:nth-child(1) {top: 100px;left: 1300px;-webkit-animation: meteor 10s linear infinite;}
+.meteor:nth-child(2) {top: 400px;left: 280px;-webkit-animation: meteor 5s linear infinite;}
 .meteor:nth-child(3) {top: 250px;left: 690px;-webkit-animation: meteor 12s linear infinite;}
-.meteor:nth-child(4) {top: 50px;left: 1024px;-webkit-animation: meteor 20s linear infinite;animation-delay: 5s;}
-.meteor:nth-child(5) {top: 550px;left: 900px;-webkit-animation: meteor 22s linear infinite;animation-delay: 1s;}
+.meteor:nth-child(4) {top: 50px;left: 1024px;-webkit-animation: meteor 20s linear infinite;}
+.meteor:nth-child(5) {top: 550px;left: 900px;-webkit-animation: meteor 22s linear infinite;}
+
+.star {-webkit-animation: star 10s linear infinite;}
+.star:nth-child(1) {-webkit-animation: star 5s linear infinite;}
+.star:nth-child(3) {-webkit-animation: star 2s linear infinite;}
+.star:nth-child(5) {-webkit-animation: star 1s linear infinite;}
+.star:nth-child(7) {-webkit-animation: star 3s linear infinite;}
+.star:nth-child(9) {-webkit-animation: star 4s linear infinite;}
+.star:nth-child(11) {-webkit-animation: star 8s linear infinite;}
+.star:nth-child(13) {-webkit-animation: star 4s linear infinite;}
+.star:nth-child(15) {-webkit-animation: star 5s linear infinite;}
+.star:nth-child(17) {-webkit-animation: star 6s linear infinite;}
+.star:nth-child(19) {-webkit-animation: star 2s linear infinite;}
+.star:nth-child(21) {-webkit-animation: star 7s linear infinite;}
+.star:nth-child(23) {-webkit-animation: star 8s linear infinite;}
+.star:nth-child(25) {-webkit-animation: star 3s linear infinite;}
+.star:nth-child(27) {-webkit-animation: star 1s linear infinite;}
+.star:nth-child(29) {-webkit-animation: star 2s linear infinite;}
+.star:nth-child(31) {-webkit-animation: star 8s linear infinite;}
+.star:nth-child(33) {-webkit-animation: star 9s linear infinite;}
+.star:nth-child(35) {-webkit-animation: star 10s linear infinite;}
+.star:nth-child(37) {-webkit-animation: star 3s linear infinite;}
+.star:nth-child(39) {-webkit-animation: star 5s linear infinite;}
+.star:nth-child(41) {-webkit-animation: star 6s linear infinite;}
